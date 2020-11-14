@@ -2,10 +2,9 @@
 # Basic-api Laravel
 
 Repository ini dibuat untuk sampel project webinar MojokertoDev. dibuat dengan
-
 - [Laravel](https://laravel.com).
 
-## Install
+# Install
 
 ### Tools
 1. Xampp atau Laragon apa pun yang punya apache dan mysql
@@ -33,7 +32,7 @@ Repository ini dibuat untuk sampel project webinar MojokertoDev. dibuat dengan
         `cp .env.example .env` atau `copy .env.example .env`
 
 
-   - setting database, seuikan nama database, user, dan password mysql
+   - setting database, sesuikan nama database, user, dan password mysql dengan settingan anda
 
             DB_CONNECTION=mysql
             DB_HOST=127.0.0.1
@@ -49,7 +48,7 @@ Repository ini dibuat untuk sampel project webinar MojokertoDev. dibuat dengan
 
         `php artisan migrate:fresh --seed`
 
-   - terakhir impoert collection json ke postman
+   - terakhir import collection json ke postman
    ` https://www.getpostman.com/collections/81c75bd3bec7d8c0bf73`
 
 ## Terima Kasih
