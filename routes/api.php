@@ -25,3 +25,9 @@ Route::post("user", [\App\Http\Controllers\Api\UserController::class, 'store']);
 Route::put("user/{id}", [\App\Http\Controllers\Api\UserController::class, 'update']);
 Route::patch("user/{id}", [\App\Http\Controllers\Api\UserController::class, 'update']);
 Route::delete("user/{id}", [\App\Http\Controllers\Api\UserController::class, 'destroy']);
+
+Route::post("auth/login", [\App\Http\Controllers\Api\AuthController::class, 'login'])->name('login');
+
+Route::group(["middleware" => "jwt.verify"], function(){
+    Route::get("auth/profile", [\App\Http\Controllers\Api\AuthController::class, 'AuthenticatedUser']);
+});
