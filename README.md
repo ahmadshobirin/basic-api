@@ -41,9 +41,12 @@ Repository ini dibuat untuk sampel project webinar MojokertoDev. dibuat dengan
             DB_USERNAME=root
             DB_PASSWORD=
 
-   - genereate key project
+   - genereate project key
 
         `php artisan key:generate`
+   - genereate jwt key
+
+        `php artisan jwt:secret`
    - run migration and seeder
 
         `php artisan migrate:fresh --seed`
