@@ -1,7 +1,7 @@
 
 # Basic-api Laravel
 
-Repository ini dibuat untuk sampel project webinar MojokertoDev. dibuat dengan
+Repository ini dibuat untuk sampel project webinar. dibuat dengan
 - [Laravel](https://laravel.com).
 
 # Install
