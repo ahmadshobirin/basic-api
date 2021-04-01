@@ -39,9 +39,9 @@ class UserController extends Controller
             "password" => "string|required|min:3"
         ]);
 
-        $user = User::create([
-            "email" => $request->email,
-            "name" => $request->name,
+        User::create([
+            "email"    => $request->email,
+            "name"     => $request->name,
             "password" => bcrypt($request->password),
         ]);
 

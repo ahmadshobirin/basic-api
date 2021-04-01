@@ -7,17 +7,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("hello", function(){
-    return response()->json([
-        "status"    => 200,
-        "message"   => "OKE",
-        "data"      => [
-            "nama"  => "ahmad shobirin",
-            "email" => "ahmadshobirin.dev@gmail.com",
-            "bio"   => "backend developer",
-        ]
-    ]);
-});
+Route::get("hello",[\App\Http\Controllers\HelloController::class, 'message']);
 
 Route::get("users", [\App\Http\Controllers\Api\UserController::class, 'index']);
 Route::get("user/{id}", [\App\Http\Controllers\Api\UserController::class, 'show']);
